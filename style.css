@@ -1,0 +1,765 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+main{
+    height: 125%;
+    width: 100%;
+}
+.grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.4fr 1fr 1fr 1fr;
+    gap: 10px; 
+    padding: 15px; 
+    min-height: 130vh; 
+    background-color: #121214; 
+    grid-template-areas: 
+        "b1 b2 b3 b4"
+        "b1 b5 b5 b4"
+        "b6 b5 b5 b7"
+        "b8 b8 b9 b7";
+}
+
+#b1 { 
+    grid-area: b1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: system-ui, -apple-system, sans-serif;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background-image: url("https://i.pinimg.com/736x/d0/eb/8f/d0eb8f6a4775575938ae70a7f057af02.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-logo {
+    width: 40px;
+    height: 40px;
+    background-image: url("./logo.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contents {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+}
+
+.stat-card {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 10px 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-circle {
+    width: 32px;
+    height: 32px;
+    background-color: #faea0c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icon-circle i {
+    font-size: 1rem;
+    color: #000;
+    background: transparent;
+    padding: 0;
+}
+
+.stat-text {
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-text span {
+    font-size: 0.55rem;
+    color: #a5a1a8;
+    font-weight: 600;
+}
+.box{
+    border-radius: 20px;
+}
+#b2 { 
+    grid-area: b2; 
+    background-image: url("https://i.pinimg.com/webp85/736x/24/15/e7/2415e7e9b77ef8c99ecbdeeb50702cda.webp");
+    background-size: cover;
+    background-position: center; 
+    padding: 55px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+#b2 h1 {
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    color: #2c2c2c;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.buttons button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.buttons button img {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+}
+
+.buttons button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+}
+
+.buttons button:active {
+    transform: scale(0.98);
+    filter: brightness(0.95);
+}
+#b3 { 
+    grid-area: b3; 
+    background-color: #FEFEFE;
+    padding-left: 20px;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+#b3 p{
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+#b3 h2{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+.color{
+    height: 15px;
+    width: 90%;
+    margin-top: 30px;
+    background-color: #CB816F;
+    border-radius: 10px;
+    border: 1px solid black;
+    rotate: calc(180deg);
+}
+.clr1{
+    height: 12.5px;
+    width: 85%;
+    background-color: #FED800;
+    border-radius: 10px;
+}
+.clr2{
+    height: 12.5px;
+    width: 80%;
+    background-color: #fffffc;
+    border-radius: 10px;
+}
+.clr3{
+    height: 12.5px;
+    width: 60%;
+    background-color: #080808;
+    border-radius: 10px;
+}
+#b4 { 
+    grid-area: b4; 
+    background-color: #F7F7F7; 
+    color: #000;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.top4{
+    height: 30px;
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3px;
+    margin-bottom: 20px;
+}
+.logo4{
+    width: 10px;
+    height: 15px;
+    background-color: #000000;
+}
+.logo1{
+    width: 10px;
+    height: 15px;
+    background-color: #c0bd02;
+    margin-right: 8px;
+}
+.center h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+}
+.top4 h4{
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bottom{
+    height: 40%;
+    width: 93%;
+    background-color: #F5BEB1;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.bottomtop{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.bottom p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bottomtop i{
+    font-size: 1rem;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(250, 234, 12);
+}
+#b5 { 
+    grid-area: b5; 
+    background-image: url("./mainimage.png");
+    background-size: cover;
+    background-position: center;
+}
+#b6 { 
+    grid-area: b6; 
+    background-color: #FCFCFC; 
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bottom6{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.logo6{
+    height: 40px;
+    width: 40px;
+    background-image: url("./logo6.png");
+    background-size: cover;
+    background-position: center;
+}
+#b8 { 
+    grid-area: b8; 
+    background-color: #EDB1A3; 
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif; 
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+}
+.leftimage{
+    width: 40%;
+    height: 100%;
+    background-image: url("./leftgirlimage.webp");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.right8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 60%;
+}
+.right7 h3 {
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+.trainers-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: auto;
+}
+.stat-counter h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.stat-counter p {
+    font-size: 0.65rem;
+    font-weight: bold;
+    color: #222;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+}
+.avatar-stack {
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+}
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #EDB1A3;
+    margin-left: -15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.avatar:first-child {
+    margin-left: 0;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#b7 { 
+    grid-area: b7; 
+    background-image: url("./lastimage.png");
+    background-size: cover;
+    background-position: top;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+#b7 h3 {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    margin-left: 2rem;
+}
+#b7 button {
+    background-color: #faea0c;
+    color: #000;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 2rem;
+}
+#b9 { 
+    grid-area: b9; 
+    background-image: url("./girlbackground.png");
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+}
+#b9 img{
+    position:absolute;
+    width: 98%;
+    height: auto;
+    margin-top: -2.5rem;
+}
+
+i{
+    font-size: 1rem;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: rgb(250, 234, 12);
+    color: #000;
+}
+p{
+    font-size: 0.8rem;
+    
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+@media (max-width: 767px) {
+    main {
+        height: auto;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "b1"
+            "b2"
+            "b3"
+            "b4"
+            "b5"
+            "b6"
+            "b8"
+            "b7"
+            "b9";
+        min-height: auto;
+        padding: 10px;
+        gap: 8px;
+    }
+
+    #b1 {
+        padding: 15px;
+    }
+    .stat-card {
+        padding: 8px 5px;
+        gap: 5px;
+    }
+    .icon-circle {
+        width: 28px;
+        height: 28px;
+    }
+    .icon-circle i {
+        font-size: 0.9rem;
+    }
+    .stat-text {
+        font-size: 0.75rem;
+    }
+    .stat-text span {
+        font-size: 0.5rem;
+    }
+
+    #b2 {
+        padding: 30px 20px;
+    }
+    #b2 h1 {
+        font-size: 1rem;
+    }
+    .buttons button img {
+        height: 25px;
+    }
+
+    #b3 {
+        padding-left: 15px;
+        padding-top: 20px;
+    }
+    #b3 h2 {
+        font-size: 1.5rem;
+    }
+    .color {
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    #b4 {
+        padding-top: 20px;
+        padding-left: 15px;
+    }
+    .top4 {
+        margin-bottom: 15px;
+    }
+    .center h1 {
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+    }
+    .bottom {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .bottomtop {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+    .bottomtop i {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+    .bottom p {
+        font-size: 0.75rem;
+    }
+
+    #b6 {
+        padding-left: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .bottom6 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    #b8 {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+    .leftimage {
+        width: 100%;
+        height: 150px;
+    }
+    .right8 {
+        width: 100%;
+        height: auto;
+    }
+    .right7 h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .trainers-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    .avatar-stack {
+        margin-left: 0;
+    }
+    .avatar {
+        width: 35px;
+        height: 35px;
+        margin-left: -10px;
+    }
+    .stat-counter h2 {
+        font-size: 1.8rem;
+    }
+    .stat-counter p {
+        font-size: 0.6rem;
+    }
+
+    #b7 {
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #b7 h3 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+    #b7 button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+        margin-left: 0;
+    }
+
+    #b9 img {
+        width: 100%;
+        margin-top: -1.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    main {
+        height: auto;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "b1 b1"
+            "b2 b3"
+            "b4 b5"
+            "b6 b5"
+            "b8 b7"
+            "b9 b7";
+        min-height: 100vh;
+        padding: 12px;
+        gap: 10px;
+    }
+
+    #b1 {
+        padding: 18px;
+    }
+    .stat-card {
+        padding: 9px 6px;
+        gap: 6px;
+    }
+    .icon-circle {
+        width: 30px;
+        height: 30px;
+    }
+    .icon-circle i {
+        font-size: 0.95rem;
+    }
+    .stat-text {
+        font-size: 0.8rem;
+    }
+    .stat-text span {
+        font-size: 0.52rem;
+    }
+
+    #b2 {
+        padding: 40px 25px;
+    }
+    #b2 h1 {
+        font-size: 1.05rem;
+    }
+    .buttons button img {
+        height: 28px;
+    }
+
+    #b3 {
+        padding-left: 18px;
+        padding-top: 25px;
+    }
+    #b3 h2 {
+        font-size: 1.8rem;
+    }
+    .color {
+        width: 92%;
+        margin-top: 25px;
+    }
+
+    #b4 {
+        padding-top: 25px;
+        padding-left: 18px;
+    }
+    .top4 {
+        margin-bottom: 18px;
+    }
+    .center h1 {
+        margin-bottom: 40px;
+        font-size: 1.3rem;
+    }
+    .bottom {
+        height: auto;
+        padding: 18px;
+    }
+    .bottomtop i {
+        font-size: 0.95rem;
+        padding: 6px;
+    }
+    .bottom p {
+        font-size: 0.78rem;
+    }
+
+    #b6 {
+        padding-left: 25px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    #b8 {
+        flex-direction: row;
+        padding: 18px;
+        gap: 20px;
+    }
+    .leftimage {
+        width: 45%;
+        height: 100%;
+    }
+    .right8 {
+        width: 55%;
+        height: 100%;
+    }
+    .right7 h3 {
+        font-size: 1.05rem;
+    }
+    .trainers-info {
+        margin-top: auto;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+    .avatar-stack {
+        margin-left: 3rem;
+    }
+    .avatar {
+        width: 40px;
+        height: 40px;
+        margin-left: -12px;
+    }
+    .stat-counter h2 {
+        font-size: 2rem;
+    }
+    .stat-counter p {
+        font-size: 0.62rem;
+    }
+
+    #b7 {
+        padding: 18px;
+        justify-content: flex-end;
+        align-items: flex-start;
+        text-align: left;
+    }
+    #b7 h3 {
+        font-size: 1.1rem;
+        margin-bottom: 18px;
+        margin-left: 1.5rem;
+    }
+    #b7 button {
+        padding: 9px 18px;
+        font-size: 0.95rem;
+        margin-left: 1.5rem;
+    }
+
+    #b9 img {
+        width: 98%;
+        margin-top: -2rem;
+    }
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
