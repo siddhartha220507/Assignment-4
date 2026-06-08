@@ -97,7 +97,7 @@ body {
     object-fit: contain;
 }
 .p-txt h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: 500;
     line-height: 1.05;
     color: #fff;
@@ -117,14 +117,45 @@ body {
 
 .badge {
     position: absolute;
-    bottom: 35px;
-    right: 35px;
-    width: 80px;
-    height: 80px;
+    bottom: 45px;
+    right: 45px;
+    width: 5rem;
+    height: 5rem;
     background: #111;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 1.5px solid #111;
+    outline-offset: 4px;
+}
+
+.badge::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
     border-radius: 50%;
 }
 
+.badge svg {
+    width: 100%;
+    height: 100%;
+    animation: rotateText 10s linear infinite;
+}
+
+.badge text {
+    fill: #fff;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+@keyframes rotateText {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
 .grid {
     flex: 1;
     display: grid;
@@ -135,9 +166,9 @@ body {
 
 .head {
     grid-column: 1 / -1;
-    font-size: 5.5rem;
+    font-size: 6rem;
     font-weight: 900;
-    letter-spacing: -2px;
+    letter-spacing: 2rem;
     display: flex;
     align-items: center;
     line-height: 1;
@@ -189,10 +220,22 @@ body {
 .b1 {
     grid-column: 1 / 3;
     grid-row: 2 / 4;
-    background-color: #ff9a98;
+    background-image: url("https://i.pinimg.com/1200x/a6/40/66/a6406680450b06d1332191e72a9703ab.jpg");
+    background-size: cover;
+    background-position: top;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
+.b1 i {
+    color: #000000;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.b1 i:hover { 
+    color: #555555;
+    scale: 1.2;
+ }
 
 .b1::after { border-color: rgba(255,255,255,0.6); }
 
@@ -254,8 +297,16 @@ body {
     width: 45%;
     background-color: #0b0b0b;
     border-radius: 0 40px 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
-
+.b5-l img{
+    width: 150%;
+    height: 150%;
+    object-fit: contain;
+}
 .b5-r {
     width: 55%;
     padding: 30px;
