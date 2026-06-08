@@ -235,7 +235,7 @@ body {
 .b1 i:hover { 
     color: #555555;
     scale: 1.2;
- }
+}
 
 .b1::after { border-color: rgba(255,255,255,0.6); }
 
@@ -313,4 +313,35 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media (max-width: 1400px) {
+    .head { font-size: 4.5rem; letter-spacing: 1rem; }
+    .p-txt h1 { font-size: 3rem; }
+    .outerring { width: 220px; height: 220px; }
+    .ring { width: 200px; height: 200px; border-width: 15px; }
+    .box h2 { font-size: 2.2rem; }
+    .box p { font-size: 0.95rem; }
+}
+
+@media (max-width: 1024px) {
+    .dash { height: auto; min-height: 100vh; flex-direction: column; }
+    .side { flex-direction: row; width: 100%; justify-content: center; gap: 40px; margin-bottom: 10px; }
+    .side span { writing-mode: horizontal-tb; transform: none; }
+    .prof { width: 100%; padding: 30px; }
+    .outerring { width: 200px; height: 200px; }
+    .ring { width: 180px; height: 180px; border-width: 12px; }
+    .head { font-size: 4rem; letter-spacing: 0.5rem; }
+    .badge { bottom: 25px; right: 25px; width: 4.5rem; height: 4.5rem; }
+    .grid { gap: 15px; }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .dash { height: auto; min-height: 100vh; }
+    .head { font-size: 3.5rem; letter-spacing: 0; }
+    .p-txt h1 { font-size: 2.5rem; }
+    .outerring { width: 160px; height: 160px; }
+    .ring { width: 140px; height: 140px; border-width: 10px; }
+    .grid { grid-template-rows: auto 150px 150px 150px; }
+    .box { padding: 20px; }
 }
